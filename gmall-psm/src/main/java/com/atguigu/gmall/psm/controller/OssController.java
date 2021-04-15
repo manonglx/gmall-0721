@@ -37,6 +37,7 @@ public class OssController {
     @GetMapping
     public Resp<Object> policy(){
 
+
         String accessId = ""; // 请填写您的AccessKeyId。
         String accessKey = ""; // 请填写您的AccessKeySecret。
         String endpoint = "oss-cn-shanghai.aliyuncs.com"; // 请填写您的 endpoint。
