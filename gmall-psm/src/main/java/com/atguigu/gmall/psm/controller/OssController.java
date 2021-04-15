@@ -38,7 +38,7 @@ public class OssController {
     public Resp<Object> policy(){
 
         String accessId = "LTAI4GAACJqoRxVQtyyBaZ7o"; // 请填写您的AccessKeyId。
-        String accessKey = "<yourAccessKeySecret>"; // 请填写您的AccessKeySecret。
+        String accessKey = "qqRC2iVn3qQqEbX0IXfI9pAOAr1U3I"; // 请填写您的AccessKeySecret。
         String endpoint = "oss-cn-shanghai.aliyuncs.com"; // 请填写您的 endpoint。
         String bucket = "5gjishi"; // 请填写您的 bucketname 。
         String host = "https://" + bucket + "." + endpoint; // host的格式为 bucketname.endpoint
