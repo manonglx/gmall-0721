@@ -27,4 +27,18 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         return new PageVo(page);
     }
 
+    @Override
+    public PageVo queryGroupByPage(QueryCondition queryCondition, Long catId) {
+
+        QueryWrapper<CategoryEntity>  queryWrapper=  new QueryWrapper<CategoryEntity>();
+        if(catId !=null){
+            queryWrapper.eq("catelog_id",catId);
+        }
+        IPage<CategoryEntity> page = this.page(
+                new Query<CategoryEntity>().getPage(queryCondition),
+                queryWrapper
+        );
+        return new PageVo(page);
+    }
+
 }

@@ -16,5 +16,7 @@ import com.atguigu.core.bean.QueryCondition;
 public interface CategoryService extends IService<CategoryEntity> {
 
     PageVo queryPage(QueryCondition params);
+
+    PageVo queryGroupByPage(QueryCondition queryCondition, Long catId);
 }
 
