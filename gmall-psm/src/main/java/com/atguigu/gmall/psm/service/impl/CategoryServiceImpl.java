@@ -1,5 +1,6 @@
 package com.atguigu.gmall.psm.service.impl;
 
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.stereotype.Service;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -27,6 +28,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         return new PageVo(page);
     }
 
+    @GlobalTransactional
     @Override
     public PageVo queryGroupByPage(QueryCondition queryCondition, Long catId) {
 
